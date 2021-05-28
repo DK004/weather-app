@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400;900&display=swap');
+
+
+*{
+    font-family: 'Piazzolla', serif;
+}
+
+:root{
+    /* --main-sec:#ff4f5a; */
+    --main-bg: #1e272e;
+    --main-color: #ff4f5a;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+.main_menu{
+    background-color: var(--main-bg) !important;
+}
+.navbar-brand{
+    font-size: 1.8rem;
+}
+
+.navbar{
+    background-color: var(--main-bg);
+    font-size: 1.8rem ;
+}
+.navbar a{
+    color: white  !important;
+}
+
+.navbar a:hover{
+    color: var(--main-color) !important;
+}
+
+.rotateIcon{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    color: var(--main-color);
+}
+@keyframes rot {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.main_left{
+    display: flex;
+    height: 70rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main_left p{
+    font-size: 1.8rem;
+}
+.main_left h1{
+    font-size: 4rem;
+    text-transform: capitalize;
+    margin: 1rem 0 4rem 0;
+}
+#wInfo{
+    color: var(--main-color);
+}
+
+.but{
+    font-size: 1.4rem;
+    background-color: var(--main-color) !important;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    text-transform: uppercase;
+}
+.but:hover{
+    background-color: var(--main-bg) !important;
+    color: white;
+}
+
+.main_right{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+footer{
+    margin-top: auto;
+    background-color: var(--main-bg);
+    color: white;
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.temp_form input, .temp_form button{
+    font-size: 1.6rem;
+    margin: 5rem auto 3rem;
+}
+
+.dayDate{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4rem;
+}
+.card{
+    margin: auto;
+}
+
+.card-title{
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+#temp_status{
+    font-size: 5rem;
+    margin: 0;
+}
+
+.card-text{
+
+    font-size: 2rem;
+  
+}
+
+
+
+
+
+
+
+
+
+
+/* responsive code */
+@media(max-width:768px){
+    .main_left{
+        height: auto;
+        margin:5rem 0;
+    }
+    .main_right{
+        height: auto;
+        margin-top: 3rem ;
+    }
+
+
+
+    .temp_form input, .temp_form button{
+        font-size: 1.6rem;
+        margin: 5rem 0px 3rem;
+    }
+    
+    .dayDate{
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.4rem;
+    }
+    .card{
+        margin: auto;
+    }
+    
+    .card-title{
+        font-size: 6rem;
+        font-weight: 900;
+    }
+    
+    #temp_status{
+        font-size: 5rem;
+        margin: 0;
+    }
+    
+    .card-text{
+    
+        font-size: 2rem;
+      
+    }
+}
+

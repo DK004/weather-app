@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headerlinks}}
+    <title>Weather-App</title>
+</head>
+<body>
+    {{>navbar}}
+
+<div class="err-image mx-auto" style="width: 50vw;">
+    <img src="img/404.jpg" alt="error msg" class="img-fluid" style="width: 100%;height:auto;">
+</div>
+<h1 class="text-center h1" style="color:var(--main-bg); font-weight:500;">
+{{errMsg}}
+</h1>
+
+
+    {{>footer}}
+
+
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+</html>
